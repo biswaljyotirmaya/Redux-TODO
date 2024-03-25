@@ -66,6 +66,7 @@ function Todo() {
             <button
               className="rounded-xl hover:shadow-md px-4 py-1 hover:shadow-black"
               onClick={() => {
+                setUpdatedTask(todo.task);
                 setIsEdit(!isEdit);
                 setId(todo.id);
               }}
